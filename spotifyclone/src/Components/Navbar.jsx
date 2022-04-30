@@ -13,6 +13,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { Footer } from './Footer';
 
 const pages = ['Premium', 'Support', 'Download' , "|" , "Signup" , "Login" ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -38,7 +39,7 @@ export const Navbar = () => {
 
   return (
       <>
-    <AppBar style={{backgroundColor:"black" , height:"70px"}} position="static">
+    <AppBar style={{backgroundColor:"black" , height:"70px" , width:"100%"}} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -56,7 +57,7 @@ export const Navbar = () => {
               <Button id="btn"
                 key={page}
                 // onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white',  marginLeft:"5px"  }}
+                sx={{ my: 2, color: 'white'  }}
               >
                 {page}
               </Button>
@@ -78,9 +79,16 @@ export const Navbar = () => {
                </div>
                <div className="rightdiv"></div>
            </div>
-           <div>
-               
+           <div className="seconddiv">
+                       <div className="info">
+                       <p className="colour">SPOTIFY FREE</p>
+                       <h1 className="colour">Listening is everything</h1>
+                       <h3 className="colour">Millions of songs and podcasts. No credit card needed.</h3>
+                       <button className="colour btn2">GET SPOTIFY FREE</button>
+                       </div>
            </div>
+
+           <Footer/>
 </>
   );
 };
