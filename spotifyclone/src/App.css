@@ -74,5 +74,34 @@ background-size: cover;
 .footer{
   width: 100%;
   height: 500px;
+  color: white;
   background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.footer>div{
+margin-top: 5%;
+}
+.footer a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20%;
+}
+.footer a:hover{
+  color: #1ed760;
+}
+#icondiv a{
+  display: inline-block;
+  margin-left: 35px;
+}
+#icondiv>div{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: lightslategray;
+}
+#icondiv>div i{
+  width: 100%;
+  height: 100%;
 }
