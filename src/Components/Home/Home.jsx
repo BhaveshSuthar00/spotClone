@@ -20,10 +20,9 @@ const Home = () => {
     })
 }, []) 
   return (
-    <>
-        home
-    </>
+    <div>Home changed</div>
   )
 }
+
 
 export default Home
